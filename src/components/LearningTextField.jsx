@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { TextField, Typography } from "@mui/material";
 
 const LearningTextField = () => {
@@ -8,7 +8,8 @@ const LearningTextField = () => {
     <div>
       <TextField
         sx={{ margin: "20px" }}
-        value={name} onChange={(e) => setName(e.target.value)}
+        value={name}
+        onChange={(e) => setName(e.target.value)}
         type="text"
         placeholder="Name"
         variant="outlined"
@@ -31,6 +32,12 @@ const LearningTextField = () => {
       >
         Password
       </TextField>
+      <TextField
+        sx={{ margin: "20px" }}
+        id="filled-basic"
+        label="Filled"
+        variant="filled"
+      />
       <Typography>{name}</Typography>
     </div>
   );
